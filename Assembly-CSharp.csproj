@@ -36,7 +36,17 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\ButtonHandler.cs" />
+     <Compile Include="Assets\LeanTween\Framework\LeanTween.cs" />
+     <Compile Include="Assets\LeanTween\Framework\LTDescr.cs" />
+     <Compile Include="Assets\LeanTween\Framework\LeanTweenExt.cs" />
+     <Compile Include="Assets\LeanTween\Framework\LTSeq.cs" />
+     <Compile Include="Assets\LeanTween\Framework\LeanAudio.cs" />
+     <Compile Include="Assets\LeanTween\Framework\LeanSmooth.cs" />
+     <Compile Include="Assets\LeanTween\Framework\LeanTest.cs" />
+     <Compile Include="Assets\Scripts\SceneHandler.cs" />
+     <Compile Include="Assets\LeanTween\Framework\LTDescrOptional.cs" />
+     <None Include="Assets\LeanTween\ReadMe.txt" />
+     <None Include="Assets\LeanTween\License.txt" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -615,6 +625,9 @@
     </Reference>
     <Reference Include="Unity.XR.ARCore.Editor">
         <HintPath>C:/Users/Glenn/Documents/MCT_3/MixedReality/New Unity Project/Library/ScriptAssemblies/Unity.XR.ARCore.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+        <HintPath>C:/Users/Glenn/Documents/MCT_3/MixedReality/New Unity Project/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Subsystem.Registration">
         <HintPath>C:/Users/Glenn/Documents/MCT_3/MixedReality/New Unity Project/Library/ScriptAssemblies/Unity.Subsystem.Registration.dll</HintPath>

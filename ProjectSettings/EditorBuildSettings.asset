@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Onboarding_Screen1.unity
     guid: 9cc7676559130d54697baf424d313f48
   - enabled: 1
+    path: Assets/Scenes/Onboarding_Screen2.unity
+    guid: 61d464693b22e9e4e9bc0a9bc6745307
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects:

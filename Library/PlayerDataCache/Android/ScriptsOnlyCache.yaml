@@ -1,7 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - ButtonHandler
+    - SceneHandler
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.XR.ARCore.Editor.dll:
@@ -57,19 +57,72 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1506}
     - Class: 114
-      Script: {instanceID: 1814}
+      Script: {instanceID: 2102}
     - Class: 114
-      Script: {instanceID: 2094}
+      Script: {instanceID: 2454}
     - Class: 114
-      Script: {instanceID: 2444}
+      Script: {instanceID: 2570}
     - Class: 114
-      Script: {instanceID: 2560}
+      Script: {instanceID: 2780}
     - Class: 114
-      Script: {instanceID: 2770}
+      Script: {instanceID: 2994}
     - Class: 114
-      Script: {instanceID: 2984}
+      Script: {instanceID: 3102}
     - Class: 114
-      Script: {instanceID: 3092}
+      Script: {instanceID: 4194}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Onboarding_Screen2.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1506}
+    - Class: 114
+      Script: {instanceID: 2102}
+    - Class: 114
+      Script: {instanceID: 2454}
+    - Class: 114
+      Script: {instanceID: 2570}
+    - Class: 114
+      Script: {instanceID: 2780}
+    - Class: 114
+      Script: {instanceID: 2994}
+    - Class: 114
+      Script: {instanceID: 3102}
+    - Class: 114
+      Script: {instanceID: 4194}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -108,15 +161,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1600}
     - Class: 114
-      Script: {instanceID: 2476}
+      Script: {instanceID: 2486}
     - Class: 114
-      Script: {instanceID: 3274}
+      Script: {instanceID: 3286}
     - Class: 114
-      Script: {instanceID: 3278}
+      Script: {instanceID: 3290}
     - Class: 114
-      Script: {instanceID: 3742}
+      Script: {instanceID: 3754}
     - Class: 114
-      Script: {instanceID: 4016}
+      Script: {instanceID: 4030}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -175,6 +228,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LeanTween
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalAsset
@@ -220,12 +279,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_FontAsset
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ButtonHandler
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -684,6 +737,12 @@ ScriptsOnlyBuild:
     className: RectMask2D
   - hash:
       serializedVersion: 2
+      Hash: 6b78c146792eba33a5dd7e8706e12084
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SceneHandler
+  - hash:
+      serializedVersion: 2
       Hash: 87ad3705a58f19c47136728d4a6e9c47
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -817,5 +876,6 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/Onboarding_Screen1.unity
+  - Assets/Scenes/Onboarding_Screen2.unity
   - Assets/Scenes/SampleScene.unity
   playerPath: C:/Users/Glenn/Documents/MCT_3/MixedReality/New Unity Project/Build/android-ar.apk
