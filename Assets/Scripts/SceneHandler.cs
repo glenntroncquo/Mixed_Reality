@@ -12,7 +12,7 @@ public class SceneHandler : MonoBehaviour
         fader.gameObject.SetActive(true);
 
         LeanTween.alpha(fader, 1, 0);
-        LeanTween.alpha(fader, 0, 0.5f).setOnComplete(() =>
+        LeanTween.alpha(fader, 0, 0.4f).setOnComplete(() =>
         {
             fader.gameObject.SetActive(false);
         });  
@@ -22,15 +22,20 @@ public class SceneHandler : MonoBehaviour
         fader.gameObject.SetActive(true);
 
         LeanTween.alpha(fader, 0, 0);
-        LeanTween.alpha(fader, 1, 0.5f).setOnComplete(() =>
+        LeanTween.alpha(fader, 1, 0.4f).setOnComplete(() =>
         {
-            LoadScene();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         });
     }
 
-    public void LoadScene ()
+    public void HandlePreviousScreen()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-       
+        fader.gameObject.SetActive(true);
+
+        LeanTween.alpha(fader, 0, 0);
+        LeanTween.alpha(fader, 1, 0.4f).setOnComplete(() =>
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        });
     }
 }

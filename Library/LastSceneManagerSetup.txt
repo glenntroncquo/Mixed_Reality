@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/ARScreen.unity
+- path: Assets/Scenes/OrderPage.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
