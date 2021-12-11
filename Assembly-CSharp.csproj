@@ -42,11 +42,13 @@
      <Compile Include="Assets\LeanTween\Framework\LTSeq.cs" />
      <Compile Include="Assets\LeanTween\Framework\LeanAudio.cs" />
      <Compile Include="Assets\LeanTween\Framework\LeanSmooth.cs" />
+     <Compile Include="Assets\Scripts\SelectionManager.cs" />
      <Compile Include="Assets\Scripts\OrderHandler.cs" />
      <Compile Include="Assets\LeanTween\Framework\LeanTest.cs" />
      <Compile Include="Assets\Scripts\SceneHandler.cs" />
      <Compile Include="Assets\LeanTween\Framework\LTDescrOptional.cs" />
      <Compile Include="Assets\Scripts\ImageTracker.cs" />
+     <Compile Include="Assets\Scripts\OrderedHandler.cs" />
      <None Include="Assets\LeanTween\ReadMe.txt" />
      <None Include="Assets\LeanTween\License.txt" />
     <Reference Include="UnityEngine">

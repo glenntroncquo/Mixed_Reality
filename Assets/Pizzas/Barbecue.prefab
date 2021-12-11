@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4068025578875918426}
   - component: {fileID: 1142608225797216255}
   - component: {fileID: 2900225153617486645}
+  - component: {fileID: 1442524876608626072}
   m_Layer: 0
   m_Name: Barbecue
   m_TagString: Untagged
@@ -85,3 +86,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1442524876608626072
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3692765986310210272}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.019935586, y: 0.0010205514, z: 0.020237941}
+  m_Center: {x: 0.000017140992, y: 0.00046762056, z: 0.000014502555}

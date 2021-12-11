@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2810979345961343582}
   - component: {fileID: 1201688449530418683}
   - component: {fileID: 3983915519968518449}
+  - component: {fileID: 6620772683373191760}
   m_Layer: 0
   m_Name: Cheese & Ham
   m_TagString: Untagged
@@ -85,3 +86,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6620772683373191760
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3191163720026554596}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.019935584, y: 0.0010205517, z: 0.020237938}
+  m_Center: {x: 0.00001714006, y: 0.00046762024, z: 0.0000145020895}

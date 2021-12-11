@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/OrderPage.unity
     guid: aefdbb99f91dd094992d36a44586639e
+  - enabled: 1
+    path: Assets/Scenes/OrderedPage.unity
+    guid: 15e4214c6b5392e4197ddef86338c4e9
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: cc8b105edbd7d6b4eaa2924c38fbeaeb, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 6a2beb065aa145f4e985b021cff446e7, type: 2}

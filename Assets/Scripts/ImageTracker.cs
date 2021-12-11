@@ -17,6 +17,9 @@ public class ImageTracker : MonoBehaviour
     private ARTrackedImageManager trackedImageManager;
     public static string activePizza = "Pepperoni";
     public Text pizzaName;
+    public Camera camera;
+    private bool rotate = false;
+    private GameObject prefab;
 
     private void Awake()
     {
@@ -62,10 +65,9 @@ public class ImageTracker : MonoBehaviour
 
     private void UpdateImage(ARTrackedImage trackedImage)
     {
-        // string name = trackedImage.referenceImage.name;
         Vector3 position = trackedImage.transform.position;
 
-        GameObject prefab = spawnedPrefabs[activePizza];
+        prefab = spawnedPrefabs[activePizza];
         prefab.transform.position = position;
         prefab.SetActive(true);
 
@@ -86,5 +88,25 @@ public class ImageTracker : MonoBehaviour
     public void HandleNext()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    void Update()
+    {
+        if(rotate == true){
+            prefab.transform.Rotate(new Vector3(100f, 100f, 0f) * Time.deltaTime);
+        }
+        if (Input.GetMouseButtonDown(0)) {
+            RaycastHit hit;
+            Ray ray = camera.ScreenPointToRay(Input.mousePosition);
+            if (Physics.Raycast(ray, out hit))
+            {
+                
+                if (hit.transform.name == activePizza)
+                {
+                    rotate = !rotate;
+                }
+                
+            }
+        }
     }
 }

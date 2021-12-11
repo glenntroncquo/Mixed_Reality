@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3991635644371292041}
   - component: {fileID: 1189465086299290435}
   - component: {fileID: -933085091478862386}
+  - component: {fileID: 132683126755255658}
   m_Layer: 0
   m_Name: Margherita
   m_TagString: Untagged
@@ -140,3 +141,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!65 &132683126755255658
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828988068520696470}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.019935586, y: 0.0010205518, z: 0.020237941}
+  m_Center: {x: 0.000017140526, y: 0.0004676198, z: 0.0000145020895}
