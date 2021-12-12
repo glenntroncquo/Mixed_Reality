@@ -4,7 +4,28 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Onboarding_Screen1.unity
+    guid: 9cc7676559130d54697baf424d313f48
+  - enabled: 1
+    path: Assets/Scenes/Onboarding_Screen2.unity
+    guid: f7b0c720f414cf04cac454f7a93ef52d
+  - enabled: 1
+    path: Assets/Scenes/Onboarding_Screen3.unity
+    guid: 61d464693b22e9e4e9bc0a9bc6745307
+  - enabled: 1
+    path: Assets/Scenes/ARScreen.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/ARToppingscreen.unity
+    guid: a3a7365a548a0a646994bc15dc3db7d0
+  - enabled: 1
+    path: Assets/Scenes/OrderPage.unity
+    guid: aefdbb99f91dd094992d36a44586639e
+  - enabled: 1
+    path: Assets/Scenes/OrderedPage.unity
+    guid: 15e4214c6b5392e4197ddef86338c4e9
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: cc8b105edbd7d6b4eaa2924c38fbeaeb, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 6a2beb065aa145f4e985b021cff446e7, type: 2}
