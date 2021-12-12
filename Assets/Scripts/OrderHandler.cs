@@ -4,68 +4,79 @@ using UnityEngine;
 using System.Net.Http;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-
+// using Newtonsoft.Json;
 
 public class OrderHandler : MonoBehaviour
 {
-    public Text txt;
     private static readonly HttpClient client = new HttpClient();
     public Sprite Pepperoni;
-    public Sprite American;
-    public Sprite Ham;
+    public Sprite Margherita;
+    public Sprite HamPizza;
     public Sprite Forestiere;
-    public Sprite Cheese;
+    public Sprite Barbecue;
     public Sprite Hawai;
+    public  Sprite Bacon;
+    public  Sprite Cheese;
+    public  Sprite Chili;
+    public  Sprite Ham;
+    public  Sprite Peperoni;
     public Image img;
     [SerializeField] RectTransform fader;
-    public Image loader;
-    public Text text;
-    public static string responseString;
-
-
-    public async void Order()
-    {
-        var responseString = await client.GetStringAsync("https://glenn.pagekite.me/pizza");
-        txt.text = responseString;
-        
-    }
+    public Text activePizzaName;
+    public RectTransform rt;
+    public int positionX = -291;
 
     private void Start()
     {
         var sprites = new Dictionary<string, Sprite>()
         {
-            ["Pepperoni"] = Pepperoni,
-            ["American"] = American,
-            ["Ham"] = Ham,
+            ["Pepperoni"] = Peperoni,
+            ["Margherita"] = Margherita,
+            ["Ham"] = HamPizza,
             ["Forestiere"] = Forestiere,
-            ["Cheese"] = Cheese,
+            ["Barbecue"] = Barbecue,
             ["Hawai"] = Hawai,
         };
 
         img.sprite = sprites[ImageTracker.activePizza];
+        activePizzaName.text ="\n  "+ ImageTracker.activePizza;
+
+        var spriteToppings= new Dictionary<string, Sprite>()
+        {
+            ["Bacon"] = Bacon,
+            ["Cheese"] = Cheese,
+            ["Chili"] = Chili,
+            ["Ham"] = Ham,
+            ["Peperoni"] = Pepperoni,
+        };
+
+
+
+        foreach(var topping in ToppingHandler.toppingsDict)
+        {
+            if(spriteToppings.ContainsKey(topping.Key))
+            {
+                GameObject go = new GameObject();
+                Image image = go.gameObject.AddComponent<Image>();
+                image.sprite = spriteToppings[topping.Key];
+
+
+                go.transform.SetParent(rt, true);
+                go.GetComponent<RectTransform>().anchoredPosition = new Vector3(positionX, 0, 0);
+                go.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+            }
+
+            positionX += 150;
+        }
     }
 
     public void HandleLoader()
     {
         fader.gameObject.SetActive(true);
         LeanTween.alpha(fader, 0, 0);
-        LeanTween.alpha(fader, 1, 0.4f).setOnComplete(async () =>
+        LeanTween.alpha(fader, 1, 0.4f).setOnComplete(() =>
         {
-            loader.gameObject.SetActive(true);
-            text.gameObject.SetActive(true);
-            try{
-                responseString = await client.GetStringAsync("https://glenn.pagekite.me/pizza");
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-
-            }catch{
-                Debug.Log("An error occured");
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            }
-            
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         });
-    }
-    void Update () 
-    {
-        loader.transform.Rotate(Vector3.forward * Time.deltaTime * 100f);
     }
 }

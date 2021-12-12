@@ -46,7 +46,7 @@ public class SceneHandler : MonoBehaviour
         LeanTween.alpha(fader, 0, 0);
         LeanTween.alpha(fader, 1, 0.4f).setOnComplete(() =>
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 3);
         });
     }
 }

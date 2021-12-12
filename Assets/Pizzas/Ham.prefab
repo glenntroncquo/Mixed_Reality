@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3983915519968518449}
   - component: {fileID: 6620772683373191760}
   m_Layer: 0
-  m_Name: Cheese & Ham
+  m_Name: Ham
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

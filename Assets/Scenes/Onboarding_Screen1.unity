@@ -643,8 +643,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.15
-  m_Text: Order your pizza online by visualizing them with your camera. Choose your
-    pizza between multiple choices and toppings
+  m_Text: 'Order your pizza online by visualizing them with your camera. '
 --- !u!222 &1089984658
 CanvasRenderer:
   m_ObjectHideFlags: 0
